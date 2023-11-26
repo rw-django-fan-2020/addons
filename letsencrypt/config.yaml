@@ -78,7 +78,7 @@ schema:
       dns-hetzner|dns-linode|dns-luadns|dns-njalla|dns-nsone|dns-ovh|\
       dns-rfc2136|dns-route53|dns-sakuracloud|dns-netcup|dns-gandi|\
       dns-transip|dns-inwx|\
-      dns-desec)?"
+      dns-desec|authenticator dns-desec)?"
     rfc2136_algorithm: str?
     rfc2136_name: str?
     rfc2136_port: str?
