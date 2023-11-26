@@ -3,7 +3,7 @@ version: 5.0.2
 slug: letsencrypt
 name: Let's Encrypt
 description: Manage certificate from Let's Encrypt
-url: https://github.com/rw-django-fan-2020/addons/tree/master/letsencryptS
+url: https://github.com/rw-django-fan-2020/addons/tree/master/letsencrypt
 arch:
   - armhf
   - armv7
@@ -11,7 +11,7 @@ arch:
   - amd64
   - i386
 boot: manual
-image: homeassistant/{arch}-addon-letsencrypt
+#image: rw-django-fan-2020/{arch}-addon-letsencrypt
 init: false
 map:
   - ssl:rw
