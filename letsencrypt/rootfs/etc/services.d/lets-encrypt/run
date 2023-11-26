@@ -28,6 +28,9 @@ else
     bashio::log.info "Selected http verification"
 fi
 
+echo "CHALLENGE: ${CHALLENGE}"
+echo "$DNS_PROVIDER: {DNS_PROVIDER}"
+
 # AWS
 if [ "${CHALLENGE}" == "dns" ] && [ "${DNS_PROVIDER}" == "dns-route53" ]; then
     bashio::config.require 'dns.aws_access_key_id'
