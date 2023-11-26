@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.0.2
+
+- Add DESEC DNS challenge support
+
 ## 5.0.1
 
 - Add DuckDNS DNS challenge support

@@ -13,6 +13,7 @@ ARG \
     CERTBOT_DNS_HETZNER_VERSION \
     CERTBOT_DNS_INWX_VERSION \
     CERTBOT_DNS_TRANSIP_VERSION \
+    CERTBOT_DNS_DESEC_VERSION \
     CERTBOT_NETCUP_VERSION \
     CERTBOT_NJALLA_VERSION \
     CERTBOT_GANDI_VERSION \
@@ -57,7 +58,9 @@ RUN \
         certbot-plugin-gandi==${CERTBOT_GANDI_VERSION} \
         certbot-dns-transip==${CERTBOT_DNS_TRANSIP_VERSION} \
         certbot-dns-inwx==${CERTBOT_DNS_INWX_VERSION} \
+        certbot-dns-desec==${CERTBOT_DNS_DESEC_VERSION} \
         acme==${ACME_VERSION} \
+	&& pip3 install --no-cache-dir certbot-dns-desec
     && apk del .build-dependencies
 
 # Copy data

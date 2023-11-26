@@ -93,6 +93,8 @@ transip_api_key: ''
 inwx_username: ''
 inwx_password: ''
 inwx_shared_secret: ''
+dns_desec_token: ''
+dns_desec_endpoint: ''
 ```
 
 ## Advanced
@@ -512,6 +514,27 @@ on the DNS zone to be used for authentication.
 
 </details>
 
+<details>
+  <summary>DESEC</summary>
+
+  You will need to generate an API key from the Token Management Panel at https://desec.io/tokens.
+
+  Example configuration:
+  ```yaml
+  email: your.email@example.com
+  domains:
+    - your.domain.tld
+  certfile: fullchain.pem
+  keyfile: privkey.pem
+  challenge: dns
+  dns:
+    provider: dns-desec
+    dns_desec_token: ABCDEFGHIJKLMNOPQRSTUVWXYZ012345
+    dns_desec_endpoint: 'https://desec.io/api/v1/'
+  ```
+
+</details>
+
 ## Certificate files
 
 The certificate files will be available within the "ssl" share after successful request of the certificates.
@@ -544,6 +567,7 @@ dns-netcup
 dns-gandi
 dns-transip
 dns-inwx
+dns-desec
 ```
 
 ## Support

@@ -46,6 +46,8 @@ echo -e "dns_digitalocean_token = $(bashio::config 'dns.digitalocean_token')\n" 
       "dns_inwx_username = $(bashio::config 'dns.inwx_username')\n" \
       "dns_inwx_password = $(bashio::config 'dns.inwx_password')\n" \
       "dns_inwx_shared_secret = $(bashio::config 'dns.inwx_shared_secret')\n" \
+      "dns_dns_desec_token = $(bashio::config 'dns.dns_desec_token')\n" \
+      "dns_dns_desec_endpoint = $(bashio::config 'dns.dns_desec_endpoint')\n" \
       "dns_google_domains_access_token = $(bashio::config 'dns.google_domains_access_token')\n" > /data/dnsapikey
 
 if bashio::config.exists 'dns.google_domains_zone'; then
