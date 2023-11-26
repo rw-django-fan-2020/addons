@@ -1,9 +1,9 @@
 ---
-version: 5.0.1
+version: 5.0.2
 slug: letsencrypt
 name: Let's Encrypt
 description: Manage certificate from Let's Encrypt
-url: https://github.com/home-assistant/addons/tree/master/letsencrypt
+url: https://github.com/rw-django-fan-2020/addons/tree/master/letsencryptS
 arch:
   - armhf
   - armv7
@@ -78,7 +78,7 @@ schema:
       dns-hetzner|dns-linode|dns-luadns|dns-njalla|dns-nsone|dns-ovh|\
       dns-rfc2136|dns-route53|dns-sakuracloud|dns-netcup|dns-gandi|\
       dns-transip|dns-inwx|\
-      dns-desec|authenticator dns-desec)?"
+      dns-desec|'authenticator dns-desec')?"
     rfc2136_algorithm: str?
     rfc2136_name: str?
     rfc2136_port: str?
