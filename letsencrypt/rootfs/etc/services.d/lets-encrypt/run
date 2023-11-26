@@ -28,8 +28,8 @@ else
     bashio::log.info "Selected http verification"
 fi
 
-echo "CHALLENGE: ${CHALLENGE}"
-echo "$DNS_PROVIDER: {DNS_PROVIDER}"
+bashio::log.info "CHALLENGE: ${CHALLENGE}"
+bashio::log.info "$DNS_PROVIDER: {DNS_PROVIDER}"
 
 # AWS
 if [ "${CHALLENGE}" == "dns" ] && [ "${DNS_PROVIDER}" == "dns-route53" ]; then
