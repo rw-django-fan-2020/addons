@@ -60,7 +60,7 @@ RUN \
         certbot-dns-inwx==${CERTBOT_DNS_INWX_VERSION} \
         certbot-dns-desec==${CERTBOT_DNS_DESEC_VERSION} \
         acme==${ACME_VERSION} \
-	&& pip3 install --no-cache-dir certbot-dns-desec \
+#	&& pip3 install --no-cache-dir certbot-dns-desec \
     && apk del .build-dependencies
 
 # Copy data
